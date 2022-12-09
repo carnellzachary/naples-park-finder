@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Naples Park Finder</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>Park Finder for Naples, Florida</h1>
+
+      <p>By Zachary Carnell</p>
+    </header>
+
+    <section id="mapTop">
+      <input type="checkbox" id="bathroom" name="bathroom" value="Bathroom">
+      <label for="bathroom">Bathroom</label><br>
+      <input type="checkbox" id="beach" name="beach" value="Beach">
+      <label for="beach">Beach</label><br>
+      <input type="checkbox" id="food" name="food" value="Food">
+      <label for="food">Food</label><br>
+      <input type="checkbox" id="picnic" name="picnic" value="Picnic">
+      <label for="picnic">Picnic</label><br>
+    </section>
+
+    <section id="mapBottom">
+      <div id="mapOptions">
+          <input type="checkbox" id="baseball" name="baseball" value="Baseball">
+          <label for="baseball">Baseball</label><br>
+          <input type="checkbox" id="basketball" name="basketball" value="Basketball">
+          <label for="basketball">Basketball</label><br>
+
+          <input type="checkbox" id="biking" name="biking" value="Biking">
+          <label for="biking">Biking</label><br>
+          <input type="checkbox" id="boating" name="boating" value="Boating">
+          <label for="boating">Boating</label><br>
+          <input type="checkbox" id="fishing" name="fishing" value="Fishing">
+          <label for="fishing">Fishing</label><br>
+          <input type="checkbox" id="fitness" name="fitness" value="Fitness">
+          <label for="fitness">Fitness</label><br>
+
+          <input type="checkbox" id="hiking" name="hiking" value="Hiking">
+          <label for="hiking">Hiking</label><br>
+          <input type="checkbox" id="pickleball" name="pickleball" value="Pickleball">
+          <label for="pickleball">Pickleball</label><br>
+          <input type="checkbox" id="playground" name="playground" value="Playground">
+          <label for="playground">Playground</label><br>
+
+          <input type="checkbox" id="shuffleboard" name="shuffleboard" value="Shuffleboard">
+          <label for="shuffleboard">Shuffleboard</label><br>
+          <input type="checkbox" id="soccer" name="soccer" value="Soccer">
+          <label for="soccer">Soccer</label><br>
+          <input type="checkbox" id="swimming" name="swimming" value="Swimming">
+          <label for="swimming">Swimming</label><br>
+          <input type="checkbox" id="tennis" name="tennis" value="Tennis">
+          <label for="tennis">Tennis</label><br>
+
+          <input type="checkbox" id="volleyball" name="volleyball" value="Volleyball">
+          <label for="volleyball">Volleyball</label><br>
+          <input type="checkbox" id="waterfeature" name="waterfeature" value="Water Feature">
+          <label for="waterfeature">Water Feature</label><br>
+          <!--  Figure out what handicapac is (handicap accessiblility?) and if picnic means picnic tables. And add (#) for each checkbox option -->
+          <!--    <input type="submit" value="Submit"> -->
+      </div>
+
+      <div id="mapDescContainer">
+        <div id="naplesMap"></div>
+        <p id="description">Click on a park to see more details.</p>
+      </div>
+
+    </section>
+
+    <p>Information Source: <a href="https://hub-collierbcc.opendata.arcgis.com/datasets/CollierBCC::parks/explore?location=26.147654%2C-81.590115%2C10.92&showTable=true">Collier County GIS</a></p>
+
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+  <script src="scripts/places.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
